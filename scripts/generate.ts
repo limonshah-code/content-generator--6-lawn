@@ -183,7 +183,7 @@ const sendBatchEmail = async (success: any[], failed: any[]) => {
 
   const folderStats = getFolderStats(GENERATED_DIR);
 
-  const subject = `Content Generation Report - ${dateTimeStr} - ${success.length} Success, ${failed.length} Failed`;
+  const subject = `Content Generation Report lawn - ${dateTimeStr} - ${success.length} Success, ${failed.length} Failed`;
 
   const body = `
 Multi-Key Content Generation Report
@@ -241,5 +241,6 @@ const run = async () => {
     process.exit(1);
   }
 };
+
 
 run();
