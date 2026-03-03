@@ -214,7 +214,7 @@ const run = async () => {
   console.log('🚀 Starting Multi-Key Parallel Processing...');
 
   try {
-    const response = await axios.get("https://cloud-text-manager-server.vercel.app/api/all-files?section=lawn");
+    const response = await axios.get("https://cloud-text-manager-server.vercel.app/api/all-files?section=General");
     const pendingFiles = response.data
       .filter((f: any) => f.status === 'Pending')
       .slice(0, BATCH_SIZE);
